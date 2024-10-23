@@ -1,0 +1,115 @@
+/* Estilos para o contêiner principal */
+.canvas-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f8f9fa; /* Cor de fundo do contêiner principal */
+  min-height: 100vh; /* Altura mínima para ocupar a tela */
+}
+
+/* Estilos para o contêiner do canvas */
+.canvas-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+}
+
+/* Estilos para o canvas */
+canvas {
+  cursor: crosshair;
+  border: 1px solid #000; /* Borda do canvas */
+  background-color: #fff; /* Fundo do canvas */
+  width: 800px; /* Largura do canvas */
+  height: 600px; /* Altura do canvas */
+}
+
+/* Estilos para a lista de polígonos */
+.sidebar {
+  flex: 1;
+  max-width: 300px; /* Largura máxima da sidebar */
+  padding: 20px;
+  background-color: #fff; /* Cor de fundo da sidebar */
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.topbar {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 15px;
+  border: 5px solid rgb(0, 0, 0);
+  background-color: #b9d2ec;
+}
+
+/* Estilos para listas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilos para cada item da lista */
+li {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, border 0.3s; /* Efeito de transição */
+}
+
+/* Estilos para polígonos selecionados */
+.selected {
+  background-color: #e9ecef; /* Cor de fundo ao selecionar */
+  border: 1px solid #aaa;
+}
+
+/* Estilos para cabeçalho do polígono */
+.polygon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para opções de edição */
+.polygon-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Estilos para inputs de cores */
+input[type="color"] {
+  margin-top: 5px;
+}
+
+/* Estilos para botões */
+button {
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #007bff; /* Cor de fundo dos botões */
+  color: white; /* Cor do texto dos botões */
+  border: none; /* Remove borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s; /* Efeito de transição */
+}
+
+button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o contador de cliques */
+.click-counter {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
