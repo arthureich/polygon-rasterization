@@ -1,6 +1,6 @@
 # Project Name
 
-Polygons Rasterization project for Graphical Computing
+Polygons Rasterization project for Computer Graphics
 
 ### OS
 
